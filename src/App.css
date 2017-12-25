@@ -1,0 +1,133 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40px;
+}
+
+.App-logo2 {
+    animation: App-logo-spin infinite 20s linear;
+    height: 150px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 150px;
+    z-index: 500 !important;
+    transform: translate(-50%, -50%);
+    color: green;
+}
+.alertLoader{
+    position: relative;
+
+}
+
+.loader2 {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    z-index: 500 !important;
+    transform: translate(-50%, -50%);
+    color: green;
+}
+
+.loader3 {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    z-index: 500 !important;
+    transform: translate(-50%, -50%);
+}
+
+
+.bottomLoader {
+    position: fixed;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+}
+.appBar{
+    position: fixed!important;
+    top: 0px!important;
+    z-index: 500!important;
+
+}
+
+.fab001{
+    position: fixed;
+    right:-10px;
+    bottom: 15px;
+    z-index: 100;
+}
+
+.arrow_up{
+    color: red;
+}
+
+
+div.appBar{
+    color: black!important;
+    background-color: coral!important;
+}
+
+div a.link:visited{
+    text-decoration: none!important;
+}
+div a.link{
+    text-decoration: none!important;
+    color: black;
+    text-align: center;
+}
+
+
+div a .link:hover{
+    text-decoration: none!important;
+}
+
+.test001{
+    text-align: center;
+}
+
+.image001{
+    width: 150px;
+    height: 75px;
+}
+
+
+.grid_tile001{
+    font-size: 7pt;
+    size: 7pt;
+
+}
+.red{
+    color: red;
+}
