@@ -13,7 +13,7 @@ import {
 } from 'material-ui'
 import InfiniteScroll from 'react-infinite-scroller';
 
-class TestComponent extends Component {
+class ShoesSearchComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -65,7 +65,7 @@ class TestComponent extends Component {
     }
 
     imageClicked(response) {
-        window.location.href = 'http://www.roadrunnersports.com/rrs/products/' + response.shoesId;
+        window.open('http://www.roadrunnersports.com/rrs/products/' + response.shoesId , '_blank') ;
     }
 
     loadMore(page) {
@@ -184,7 +184,7 @@ class TestComponent extends Component {
 
 
 
-export default TestComponent;
+export default ShoesSearchComponent;
 
 const styles = {
     errorStyle: {
