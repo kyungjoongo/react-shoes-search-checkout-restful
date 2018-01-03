@@ -10,7 +10,10 @@ import MovieComponent from "./Components/MovieComponent";
 import WeatherComponent from "./Components/WeatherComponent";
 import ShoesComponent from "./Components/ShoesComponent";
 import JsonComponent from "./Components/JsonComponent";
-import TestComponent from "./Components/TestComponent";
+import ShoesSearchComponent from "./Components/ShoesSearchComponent";
+import CheckoutComponent from "./Components/CheckoutComponent";
+import CheckoutDetailComponent from "./Components/CheckoutDetailComponent";
+import AntTestComponent from "./Components/AntTestComponent";
 
 const iconStyles = {
     marginRight: 5,
@@ -62,14 +65,16 @@ class App extends Component {
                         open={this.state.open}
                         onRequestChange={(open) => this.setState({open})}
                     >
-                        <MenuItem onClick={()=>this.handleClose('Home')}><Link className='link' to={"/"}>Home</Link></MenuItem>
+                        <MenuItem onClick={()=>this.handleClose('Home')}><Link className='link' to={"/CardExampleWithAvatar"}>Home</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('Component1')}><Link className='link' to={"/Component1"}>Component1</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('Component2')}><Link className='link' to={"/Component2"}>Component2</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('CardExample')}><Link className='link' to={"/CardExampleWithAvatar"}>CardExampleWithAvatar</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('Movie')}><Link className='link' to={"/MovieComponent"}>MovieComponent</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('Weather')}><Link className='link' to={"/WeatherComponent"}>WeatherComponent</Link></MenuItem>
                         <MenuItem onClick={()=>this.handleClose('ShoesComponent')}><Link className='link' to={"/ShoesComponent"}>ShoesComponent</Link></MenuItem>
-                        <MenuItem onClick={()=>this.handleClose('TestComponent')}><Link className='link' to={"/TestComponent"}>TestComponent</Link></MenuItem>
+                        <MenuItem onClick={()=>this.handleClose('ShoesSearchComponent')}><Link className='link' to={"/ShoesSearchComponent"}>ShoesSearchComponent</Link></MenuItem>
+                        <MenuItem onClick={()=>this.handleClose('CheckoutComponent')}><Link className='link' to={"/CheckoutComponent"}>CheckoutComponent</Link></MenuItem>
+                        <MenuItem onClick={()=>this.handleClose('AntTestComponent')}><Link className='link' to={"/AntTestComponent"}>AntTestComponent</Link></MenuItem>
                     </Drawer>
 
 
@@ -79,7 +84,7 @@ class App extends Component {
                     {/*#################라우터 정의#####################*/}
                     {/*#################################################*/}
                     <div className='RouteOutlet'>
-                        <Route exact path="/" component={CardExampleWithAvatar}/>
+                        <Route exact path="/" component={MovieComponent}/>
                         <Route path="/Component1" component={Component1}/>
                         <Route path="/Component2" component={Component2}/>
                         <Route path="/CardExampleWithAvatar" component={CardExampleWithAvatar}/>
@@ -87,7 +92,10 @@ class App extends Component {
                         <Route path="/WeatherComponent" component={WeatherComponent}/>
                         <Route path="/ShoesComponent" component={ShoesComponent}/>
                         <Route path="/JsonComponent" component={JsonComponent}/>
-                        <Route path="/TestComponent" component={TestComponent}/>
+                        <Route path="/ShoesSearchComponent" component={ShoesSearchComponent}/>
+                        <Route path="/CheckoutComponent" component={CheckoutComponent}/>
+                        <Route path="/CheckoutDetailComponent/:param1" component={CheckoutDetailComponent}/>
+                        <Route path="/AntTestComponent" component={AntTestComponent}/>
 
                     </div>
                 </div>
