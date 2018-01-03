@@ -6,8 +6,8 @@ import {CircularProgress, RaisedButton} from 'material-ui'
 import '../App.css';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ScrollUpButton from "react-scroll-up-button";
-
 var FontAwesome = require('react-fontawesome');
+
 
 const style = {
     marginRight: 20
